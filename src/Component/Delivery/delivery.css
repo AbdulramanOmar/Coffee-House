@@ -1,0 +1,98 @@
+.delivery {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--light-color);
+    position: relative;
+    z-index: 22;
+}
+.imgDelivery {
+    position: absolute;
+    right: 10%;
+    bottom: -104px;
+    border-radius: 50%;
+    border: 22px solid var(--light-color);
+}
+.delivery::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 62vh;
+    background: var(--background-color);
+    border-radius: 50px 400px 0px 0px;
+    z-index: -1;
+    top: 0;
+}
+.delivery-animte {
+    position: absolute;
+    height: 90%;
+    background: var(--background-color);
+    left: 0%;
+    border-radius: 50px
+}
+.delivery-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.delivery-content .delivery-img img {
+    max-width: 100%;
+}
+.delivery-content .delivery-text {
+    flex: 50% 0;
+    position: relative;
+    z-index: 44;
+}
+.delivery .delivery-text h1 {
+    font-size: 64px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    line-height: 1;
+}
+.delivery .delivery-text p {
+    line-height: 1.6;
+    text-transform: capitalize;
+    margin: 23px 0;
+    color: var(--dark-color);
+}
+.delivery .delivery-text span {
+    font-size: 54px;
+    margin-right: 30px;
+}
+.delivery .delivery-text button {
+    padding: 17px 20px;
+    border: none;
+    background-color: var(--main-color);
+    outline: none;
+    color: var(--text-white-color);
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.delivery .delivery-price {
+    display: flex;
+    align-items: center;
+}
+@media (max-width:767px) {
+    .delivery-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .delivery .delivery-price {
+        justify-content: center;
+    }
+    .delivery-content .delivery-img {
+        gap: 10px;
+        justify-content: center;
+    }
+    .delivery-content .delivery-img img:first-of-type {
+        display: none;
+    }
+    .delivery .delivery-text p {
+        margin: 10px 0;
+    }
+    .imgDelivery {
+        display: none;
+    }
+}

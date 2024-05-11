@@ -1,0 +1,70 @@
+.roast {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--background-color);
+  overflow: hidden;
+
+}
+.roast-content {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  flex-direction: column;
+
+}
+.roast-content .roast-text {
+  text-align: center;
+  position: relative;
+  z-index: 33;
+}
+.roast-content .roast-text h1 {
+  color: var(--text-white-color);
+  text-transform: uppercase;
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+.roast-content .roast-text p {
+  color: #dbd8d8;
+  line-height: 1.66;
+}
+.roast-content .roast-cards {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.roast-content .roast-cards .card {
+  background-color: var(--main-color);
+  border-radius: 15px;
+  position: relative;
+  padding: 20px;
+}
+.roast-content .roast-cards .card h2 {
+  color: var(--text-white-color);
+  text-transform: uppercase;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+.roast-content .roast-cards .card p {
+  color: var(--text-white-color);
+}
+.roast-content .roast-cards .card svg {
+    position: absolute;
+    color: white;
+    right: 10px;
+    transition: 0.5s;
+    top: 25px;
+}
+.roast-content .roast-cards .card:hover svg {
+    transform: rotate(180deg);
+}
+.roast-content .roast-cards .card:hover {
+    background-image: url("../Assent//Vector\ \(10\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width:991px) {
+.roast-content .roast-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+}

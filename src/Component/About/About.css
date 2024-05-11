@@ -1,0 +1,47 @@
+.about {
+  background-color: var(--light-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--text-dark-color);
+  text-align: center;
+}
+.about-content h1 {
+  text-transform: uppercase;
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+.about-content h4 span {
+  line-height: 1.6;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin: 0px 0 20px;
+}
+.about-content h4 svg {
+  background-color: var(--dark-color);
+  border-radius: 10px;
+  color: var(--light-color);
+  font-weight: 500;
+}
+.about-content p {
+  text-transform: capitalize;
+  line-height: 1.6;
+}
+.about-content button {
+  display: block;
+  padding: 15px 20px;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 8px;
+  margin: 20px auto;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.about-content button:hover {
+    transform: translateY(-20px);
+}

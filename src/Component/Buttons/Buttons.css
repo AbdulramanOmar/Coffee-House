@@ -1,0 +1,29 @@
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+    flex: 38% 0 ;
+    margin-bottom: 20px;
+}
+.buttons button {
+    padding: 10px 17px;
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+    border-radius: 70px;
+    cursor: pointer;
+    flex: 32%;
+    width: 100%;
+    width: 3px;
+}
+@media (max-width:991px) {
+    .buttons {
+        flex: 70% 0;
+    }
+}
+@media (max-width:767px) {
+    .buttons {
+        flex: 100% 0;
+    }
+}

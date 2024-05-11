@@ -1,0 +1,167 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  background-color: var(--dark-color);
+  padding-bottom: 60px;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.hero .text {
+  position: relative;
+  z-index: 22;
+  flex: 33%;
+}
+.hero .text .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+.hero .text .icons .icon-img {
+  border: 2px solid var(--text-white-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.hero .text .icons .icon-img:hover {
+  border: none;
+}
+.hero .text .icons .icon-img img {
+  transition: 0.4s;
+}
+.hero .text .icons .icon-img:hover img {
+  transform: scale(1.3);
+}
+.hero .text h1 {
+  font-size: 99px;
+  text-transform: uppercase;
+  color: var(--text-white-color);
+  margin: 10px 0 25px;
+  line-height: 1;
+}
+.hero .text h1 > span {
+  color: var(--main-color);
+}
+.hero .text p {
+  color: var(--text-white-color);
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.hero .text button {
+  padding: 15px 20px;
+  border: none;
+  color: white;
+  border: 1px solid var(--main-color);
+  border-radius: 9px;
+  display: block;
+  margin: 20px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+.hero .text button::after {
+  content: "";
+  position: absolute;
+  width: 121px;
+  height: 121px;
+  background: var(--main-color);
+  top: -10%;
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.7s;
+  left: -32px;
+}
+.hero .text button:hover::after {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: translateY(0);
+  border-radius: 0;
+}
+.hero .hero-imgs {
+  position: relative;
+  left: 3%;
+  transform: translateX(-29%);
+  z-index: 0;
+}
+.hero  .img-hero {
+  position: relative;
+  left: -102px;
+  top: 65px;
+}
+.hero .hero-imgs .hero-img img {
+  border-radius: 30px;
+}
+.hero .hero-imgs .svg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 27px solid var(--dark-color);
+  border-top-left-radius: 46%;
+  position: absolute;
+  right: -1px;
+  bottom: 7%;
+  z-index: 1;
+  background: var(--dark-color);
+}
+.hero .hero-imgs .svg-img svg {
+  position: absolute;
+  color: white;
+}
+.hero .hero-imgs p {
+  color: var(--text-white-color);
+  margin: 0px 0 20px;
+}
+.hero .img-hero img {
+  border-radius: 30px;
+}
+@media (max-width: 1200px) {
+  .hero .img-hero {
+    display: none;
+  }
+}
+@media (max-width: 833px) {
+  .hero .hero-imgs {
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 767px) {
+  .hero .img-hero  {
+    display: block !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100%;
+  }
+  .hero .img-hero img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+  .hero .hero-imgs {
+    display: none !important;
+  }
+  .hero {
+    flex-wrap: wrap;
+  }
+  .hero .text h1 {
+    text-align: center;
+    font-size: 64px;
+  }
+  .hero .text p {
+    text-align: center;
+  }
+}
